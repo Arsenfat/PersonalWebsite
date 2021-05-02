@@ -1,17 +1,36 @@
+/* Smooth ancre scroll not compatible with Safari */
+/* Without javascript, no known way to implement smooth ancre scrolling for Safari */
+html {
+	scroll-behavior: smooth;
+}
+
 body
 {
   margin: 0;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 #id-card
 {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 10%;
 
+  width: 30vw;
+  height: 55vh;
+
   padding: 5px;
+  border-radius: 5px;
   background-color: white;
-  border: 2px solid red;
+}
+
+#id-card-img
+{
+  display: block;
+  width: 17vw;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #learn-more
@@ -33,6 +52,7 @@ body
   height: 100vh;
 }
 
-html {
-	scroll-behavior: smooth;
+#summary
+{
+  text-align: center;
 }
