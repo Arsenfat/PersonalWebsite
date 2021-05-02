@@ -1,0 +1,38 @@
+body
+{
+  margin: 0;
+}
+
+#id-card
+{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+
+  padding: 5px;
+  background-color: white;
+  border: 2px solid red;
+}
+
+#learn-more
+{
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 5px;
+  background-color: white;
+  border: 2px solid red;
+}
+
+#landing-screen-img
+{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+html {
+	scroll-behavior: smooth;
+}
