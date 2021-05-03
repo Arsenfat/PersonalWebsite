@@ -11,6 +11,7 @@ body
 {
   margin: 0;
   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	color: #1c1c1e;
 }
 
 #landing-screen-img
@@ -48,7 +49,7 @@ body
 #id-card-text
 {
 	width: max-content;
-	padding: 3rem;
+	padding: 1rem 3rem 1rem 3rem;
   margin: 0 auto 0 auto;
 }
 
@@ -62,10 +63,24 @@ body
 {
   position: absolute;
   bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+	width: 100%;
   padding: 5px;
+
+	animation: float 6s ease-in-out infinite;
+}
+
+#learn-more > div /*TODO: Ugly, change this div in div centering*/
+{
+	margin: 0 auto 0 auto;
+	width: fit-content;
+}
+
+#learn-more > div > a, #learn-more > div > a:visited
+{
+	text-decoration: none;
+	color: #8e8e93;
 }
 
 #content
@@ -73,7 +88,38 @@ body
 	margin: 0 5vw 0 5vw;
 }
 
+.chevron::before {
+	border-style: solid;
+	border-width: 0.2em 0.2em 0 0;
+	content: '';
+	display: inline-block;
+	height: 1.5em;
+	top: 0;
+	transform: rotate(135deg);
+	width: 1.5em;
+	color: #8e8e93;
+}
+
 #summary
 {
   text-align: center;
+}
+
+.summary-link, .summary-link:visited
+{
+	text-decoration: none;
+	color: #1c1c1e;
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
