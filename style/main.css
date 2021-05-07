@@ -84,7 +84,7 @@ body
 #learn-more > div > a, #learn-more > div > a:visited
 {
 	text-decoration: none;
-	color: #8e8e93;
+	color: #c7c7cc;
 }
 
 .chevron
@@ -97,7 +97,7 @@ body
 	top: 0;
 	transform: rotate(135deg);
 	width: 1.5em;
-	color: #8e8e93;
+	color: #c7c7cc;
 }
 
 #content
@@ -119,6 +119,32 @@ body
 #citation-name
 {
 	text-align: right;
+}
+
+.card-container
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: flex-start;
+}
+
+.card
+{
+	margin: 1rem;
+	border-radius: 3px;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%);
+
+  order: 0;
+  flex: 1 0 auto;
+  align-self: auto;
+}
+
+.card > img
+{
+	
 }
 
 @keyframes float {
