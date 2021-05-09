@@ -121,7 +121,7 @@ body
 	text-align: right;
 }
 
-.card-container
+.card-row
 {
 	display: flex;
 	flex-direction: row;
@@ -146,17 +146,32 @@ body
 .card > img
 {
 	width: 100%;
-	    border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
 }
 
-@keyframes float {
-	0% {
+.card-text
+{
+	margin: 0rem 1rem 1rem 1rem;
+}
+
+a.card, a.card:visited
+{
+	text-decoration: none;
+	color: #1c1c1e;
+}
+
+@keyframes float
+{
+	0%
+	{
 		transform: translatey(0px);
 	}
-	50% {
+	50%
+	{
 		transform: translatey(-20px);
 	}
-	100% {
+	100%
+	{
 		transform: translatey(0px);
 	}
 }
