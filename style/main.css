@@ -116,9 +116,20 @@ body
 	color: #1c1c1e;
 }
 
+.summary-link:hover
+{
+	text-decoration: none;
+	color: #c7c7cc;
+}
+
 #citation-name
 {
 	text-align: right;
+}
+
+.description
+{
+	text-align: justify;
 }
 
 .card-row
@@ -158,6 +169,12 @@ a.card, a.card:visited
 {
 	text-decoration: none;
 	color: #1c1c1e;
+	transition: transform .5s;
+}
+
+a.card:hover
+{
+	transform: scale(1.02);
 }
 
 @keyframes float
