@@ -149,9 +149,9 @@ body
 	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%);
 
   order: 0;
+	max-width: 50%;
   flex: 1 0 auto;
   align-self: auto;
-	width: min-content;
 }
 
 .card > img
