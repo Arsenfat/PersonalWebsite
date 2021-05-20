@@ -250,10 +250,19 @@ a.card:hover
 	}
 }
 
-@media only screen and (min-width: 1300px)
+@media only screen and (min-width: 1500px)
 {
 	#content
 	{
-		margin: 0 15rem 0 15rem;
+		margin: 0 20rem 0 20rem;
+	}
+}
+
+@media only screen and (min-width: 1500px)
+									 and (-webkit-min-device-pixel-ratio: 3)
+{
+	#content
+	{
+		margin: 0 30rem 0 30rem;
 	}
 }
