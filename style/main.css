@@ -130,16 +130,13 @@ body
 .description
 {
 	text-align: justify;
+	float: left;
 }
 
-.card-row
+.card-container
 {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-content: stretch;
-	align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .card
@@ -147,11 +144,8 @@ body
 	margin: 1rem;
 	border-radius: 10px;
 	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%);
-
-  order: 0;
-	max-width: 50%;
-  flex: 1 0 auto;
-  align-self: auto;
+	flex: 1 1 40%;
+	width: 50%;
 }
 
 .card > img
@@ -163,6 +157,30 @@ body
 .card-text
 {
 	margin: 0rem 1rem 1rem 1rem;
+}
+
+.card-title > h3
+{
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+
+	display: inline-block;
+	float: left;
+}
+
+.card-title > span
+{
+	margin-block-start: 1.60em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+
+	font-size: 0.80rem;
+	font-weight: bold;
+	color: #c7c7cc;
+	float: right;
 }
 
 a.card, a.card:visited
@@ -190,5 +208,34 @@ a.card:hover
 	100%
 	{
 		transform: translatey(0px);
+	}
+}
+
+@media only screen and (max-width: 800px)
+{
+	#content
+	{
+		margin: 0 3rem 0 3rem;
+	}
+
+	.card
+	{
+		flex: 1 1 100%;
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 1000px)
+{
+	#content
+	{
+		margin: 0 10rem 0 10rem;
+	}
+}
+
+@media only screen and (min-width: 1300px)
+{
+	#content
+	{
+		margin: 0 15rem 0 15rem;
 	}
 }
