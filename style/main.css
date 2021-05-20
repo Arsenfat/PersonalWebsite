@@ -211,6 +211,23 @@ a.card:hover
 	}
 }
 
+@media only screen and (min-device-width: 375px)
+									 and (max-device-width: 850px)
+									 and (-webkit-min-device-pixel-ratio: 3)
+								   and (orientation: portrait)
+{
+	#content
+	{
+		margin: 0 3rem 0 3rem;
+	}
+
+	.card
+	{
+		flex: 1 1 100%;
+		width: 100%;
+	}
+}
+
 @media only screen and (max-width: 850px)
 {
 	#content
@@ -224,6 +241,7 @@ a.card:hover
 		width: 100%;
 	}
 }
+
 @media only screen and (min-width: 1000px)
 {
 	#content
